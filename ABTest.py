@@ -15,10 +15,7 @@ st.title(" LIVE")
 # %%
 host = os.getenv("URI")
 # %%
-# 192.168.10.60:37071
-# mongodb://spuser:G7lWni1uqRX6d4Xz@49.0.201.81:4989/?authMechanism=DEFAULT&authSource=separatr
-# client = pymongo.MongoClient(
-#     "mongodb://spuser:G7lWni1uqRX6d4Xz@49.0.201.81:4989/?authMechanism=DEFAULT&authSource=separatr")
+
 client = pymongo.MongoClient(host)
 print(client.list_database_names())
 
